@@ -1,0 +1,27 @@
+{
+  "name": "html5-upiita-blogv4",
+  "version": "0.0.0",
+  "description": "",
+  "main": "prueba.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Gustas10/html5-upiita-blogv4.git"
+  },
+  "keywords": [
+    "Gustas10"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Gustas10/html5-upiita-blogv4/issues"
+  },
+  "homepage": "https://github.com/Gustas10/html5-upiita-blogv4",
+  "dependencies": {
+    "body-parser": "1.4.3",
+    "nunjucks": "1.0.5",
+    "express": "4.4.5"
+  }
+}

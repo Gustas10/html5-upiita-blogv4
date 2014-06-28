@@ -9,6 +9,7 @@
         <meta name="viewport" content="width=device-width; initial-scale=1.0">
         <!-- Importar una hoja de estilos -->
         <link href="../css/normalize.css" rel="stylesheet" />
+        <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
         <link href="../css/global.css" rel="stylesheet"/>
         <!-- Estilos para cada dispositivo -->
         <link href="../css/lap.css" rel="stylesheet" media="screen and (min-width: 800px)"/>
@@ -20,39 +21,12 @@
     </heAd>
     <!-- contenido de la pagina -->
     <body>
-        <header>
-            <div id="titulo">
-                <h1>Artesanos del Software</h1>
-            </div>
-            <!-- barra de navegacion -->
-            <nav id="menu">
-                <!-- lista ul (viñetas) ol (ordenada)-->
-
-                <ul>
-                    <li>
-                        <a href="index.html">Inicio</a>
-                    </li>
-                    <li>
-                        <a href="galeria.html">Galeria</a>
-                    </li>
-                    <li>
-                        <a href="canvas.html">Canvas</a>
-                    </li>
-                    <li>
-                        <a href="chat.html">Chat</a>
-                    </li>
-                    <li>
-                        <a href="contacto.html">Contacto</a>
-                    </li>
-                    <li>
-                        <a href="ubicacion.html">Ubicación</a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
-
+ {% extends "layout.html" %}
+ 
+ {% block contenido %}
         <section id="galeria">
             <h2>Galería</h2>
+            
             <div id="contenedor-imagen">
                 <img src="../imagenes/galeria/principal1.jpg"/>
                 <div id="descripcion-imagen">
@@ -66,54 +40,7 @@
             </div>
         </section>
 
-        <footer>
-            <div id="siguenos">
-                <h3>Síguenos</h3>
-                <img src="../imagenes/Facebook.png"/>
-                <img src="../imagenes/GooglePlus.png"/>
-                <img src="../imagenes/Twitter.png"/>
-                <img src="../imagenes/github.png"/>
-
-                <div id="redes-fijas">
-                    <div id="redes-imagenes">
-                        <img src="../imagenes/Facebook.png"/>
-                        <img src="../imagenes/GooglePlus.png"/>
-                        <img src="../imagenes/Twitter.png"/>
-                        <img src="../imagenes/github.png"/>
-                    </div>
-                    <a id="enlace-cerrar" href="#">cerrar</a>
-                </div>
-
-            </div>
-            <div id="suscribir">
-                <h3>Suscríbete</h3>
-                <label >Email: </label>
-                <input id="email" type="text"/>
-            </div>
-            <div id="powered">
-                <h3>Powered by:</h3>
-                <ul>
-                    <li>
-                        <a href="http://www.w3.org/html/wg/drafts/html/master/">HTML5</a>
-                    </li>
-                    <li>
-                        <a href="http://nodejs.org/">Node.js</a>
-                    </li>
-                    <li>
-                        <a href="http://mozilla.github.io/nunjucks/">Nunjucks</a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/">GitHub</a>
-                    </li>
-                    <li>
-                        <a href="http://jquery.com/">JQuery</a>
-                    </li>
-                    <li>
-                        <a href="https://www.openshift.com/">OpenShift</a>
-                    </li>
-                </ul>
-            </div>
-        </footer>
+        {% endblock %}
     </body>
 </html>
 

@@ -1,0 +1,8 @@
+@font-face {
+	font-family: 'DancingScript-Bold';
+	src: url("../fuentes/Dancing/DancingScript-Bold.eot") format("eot");
+src: url('../fuentes/Dancing/DancingScript-Bold.eot?') format('eot'), /*para la version de IE 6-8*/
+	     url('../fuentes/Dancing/DancingScript-Bold.woff') format('woff'), 
+	     url('../fuentes/Dancing/DancingScript-Bold.ttf')  format('truetype'),
+	     url('../fuentes/Dancing/DancingScript-Bold.svg#DancingScript-Bold') format('svg');
+}

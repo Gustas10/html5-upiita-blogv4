@@ -2,6 +2,12 @@
 /*lap font-size: 16px 1em = 16px
  moviles font-size: 20px 1em=20px*/
 
+body{
+	font-family: 'Dancing Script', cursive;
+	
+}
+
+
 /* Selector de etiqueta */
 header, footer {
 	/*color de fondo*/
@@ -155,6 +161,20 @@ footer{
 	-webkit-transition: all 2s cubic-bezier(0,1.1,.83,.67) 0s;
 }
 
+/*pseudo selectores para formas*/
+input:required:invalid{
+	background-image: url("../imagenes/incorrecto.png");
+	background-repeat: no-repeat;
+	background-size: 10px;
+	background-position: right top;
+}
+
+input:required:valid{
+	background-image: url("../imagenes/correcto.png");
+	background-repeat: no-repeat;
+	background-size: 10px;
+	background-position: right top;
+}
 
 
 
