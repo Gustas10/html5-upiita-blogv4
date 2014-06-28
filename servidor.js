@@ -49,7 +49,7 @@ app.post("/suscribir",function(req,res){
 	var parametroEmail=req.body.correo;
 	console.log("Recibi" + parametroEmail);
 	
-	res.render("suscrito.html");
-		email: parametroEmail;
+	res.render("suscrito.html",{email: parametroEmail});
+		
 	
 });
